@@ -1,7 +1,6 @@
 # Sentimental analysis 
 
 ## Steps followed :
-
 - Tokenize the text to generate numbers for the words. Optionally set the max number of words to tokenize. The out of vocabulary (OOV) token represents words that are not in the index.
 - The numbers in the word index are not ordered, therefore, need to generate sequences for the sentences.
 - Adjust the sequences to all be the same length, either by padding them with zeros and/or truncating them.
@@ -30,16 +29,12 @@
 
 
 ## LSTM : 
-same mechanism as RNN 
-cell state is the meedium through which information flows in the network
-    it is a memory of a network 
-gates decide to keep ot froget a particukar informationa s we progress sequentially ina  RNN
-This uses sigmoid activation function , it squishes values from 0 to 1
-forget gate,input gate,output gate
-
-teh forget gate decides which informstion to passs on and whihc information to forget 
-    the input and the previous hidden state is passed to sigmoid function 
-    the closer to 0 means forget and closer to 1 means keep
+- Cell state is the medium through which information flows in the network, it is a memory of a network.
+- Gates decide to keep or forget a particular informationa as we progress sequentially in RNN
+- This uses sigmoid activation function , it squishes values from 0 to 1
+- The forget gate decides which informstion to pass on and which information to forget 
+    * the input and the previous hidden state is passed to sigmoid function 
+    * the closer to 0 means forget and closer to 1 means keep
 the input gate 
     the hidden state and input is passed through the sigmoid 
     this decides whoch values need to be updated 
