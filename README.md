@@ -3,7 +3,7 @@
 ## Steps followed :
 - Tokenize the text to generate numbers for the words. Optionally set the max number of words to tokenize. The out of vocabulary (OOV) token represents words that are not in the index.
 - The numbers in the word index are not ordered, therefore, need to generate sequences for the sentences.
-- Adjust the sequences to all be the same length, either by padding them with zeros and/or truncating them.
+- Adjust the sequences to be the same length, either by padding them with zeros and/or truncating them.
 - Construct and compile a deep learning model.
 - Train the model.
 - Make predictions with the sentences. 
